@@ -1,4 +1,3 @@
-import sklearn.model_selection
 import tensorflow as tf
 import sklearn
 from sklearn.datasets import make_circles
@@ -58,16 +57,4 @@ model.fit(X_train, y_train, epochs=50)
 
 model.evaluate(X_test, y_test)
 
-<<<<<<< HEAD
-plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.RdYlBu)
-
-print(X.shape)
-print(y.shape)
-
-print(X[0])
-print(y[0])
-
-plt.show()
-=======
 plot_decision_boundary(model=model, X=X, y=y)
->>>>>>> da0c7b5f81fed0e6f26124aa94e3eb64c4ca6bf1
